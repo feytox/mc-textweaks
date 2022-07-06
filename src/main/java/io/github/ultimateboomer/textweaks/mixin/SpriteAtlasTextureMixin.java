@@ -37,7 +37,7 @@ public abstract class SpriteAtlasTextureMixin extends AbstractTexture {
 	/**
 	 * Modify mipmap level value and pass mipmap parameter
 	 */
-	@ModifyVariable(method = "stitch", at = @At("HEAD"), ordinal = 0)
+	@ModifyVariable(method = "stitch", at = @At("HEAD"), ordinal = 0, argsOnly = true)
 	private int onStitch(int mipmapLevel) {
 		if (TexTweaks.config.betterMipmaps.enable && mipmapLevel != 0
 				&& TexTweaks.config.betterMipmaps.targetAtlases.stream().anyMatch(s ->

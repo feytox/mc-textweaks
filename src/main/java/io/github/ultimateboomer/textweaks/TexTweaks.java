@@ -74,7 +74,7 @@ public class TexTweaks implements ClientModInitializer {
 
 		dataMap.forEach((id, data) -> {
 			client.player.sendMessage(new LiteralText(
-					String.format("Atlas: \u00a7e%s\u00a7r", id.toString())), false);
+					String.format("Atlas: \u00a7e%s\u00a7r", id)), false);
 			client.player.sendMessage(new LiteralText(
 					String.format(" - Size: \u00a7a%s\u00a7rx\u00a7a%s\u00a7r", data.width, data.height)),
 					false);

@@ -44,7 +44,7 @@ public class TexTweaksConfig implements ConfigData {
 		public ScalingAlgorithm downscaleAlgorithm = ScalingAlgorithm.LINEAR;
 
 		@ConfigEntry.Gui.Tooltip
-		public List<String> upscaleTargetAtlases = Arrays.asList("minecraft:textures/atlas/blocks.png");
+		public List<String> upscaleTargetAtlases = List.of("minecraft:textures/atlas/blocks.png");
 
 		@ConfigEntry.Gui.Tooltip
 		public List<String> downscaleTargetAtlases = Arrays.asList("minecraft:textures/atlas/blocks.png",
@@ -62,7 +62,7 @@ public class TexTweaksConfig implements ConfigData {
 		public int level = 9;
 
 		@ConfigEntry.Gui.Tooltip
-		public List<String> targetAtlases = Arrays.asList("minecraft:textures/atlas/blocks.png");
+		public List<String> targetAtlases = List.of("minecraft:textures/atlas/blocks.png");
 
 		public boolean onlyMipmapTarget = true;
 
